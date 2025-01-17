@@ -7,8 +7,9 @@ Created on Fri Jan 17 12:05:06 2025
 
 import plotly.express as px
 from dash import Dash, html
+import dash
 
-app=Dash(__name__)
+app=dash.Dash(__name__)
 server=app.server
 
 df = px.data.gapminder()
@@ -17,3 +18,5 @@ fig = px.scatter(df, x="gdpPercap", y="lifeExp", animation_frame="year", animati
            log_x=True, size_max=45, range_x=[100,100000], range_y=[25,90])
 fig.show()
 plot(fig)
+
+
