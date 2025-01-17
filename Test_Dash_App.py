@@ -7,6 +7,7 @@ Created on Fri Jan 17 12:05:06 2025
 
 import plotly.express as px
 
+app=Dash(__name__)
 server=app.server
 
 df = px.data.gapminder()
