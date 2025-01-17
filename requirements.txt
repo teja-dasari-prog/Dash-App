@@ -1,2 +1,2 @@
-das==2.6.0
+dash==2.6.0
 plotly.express
